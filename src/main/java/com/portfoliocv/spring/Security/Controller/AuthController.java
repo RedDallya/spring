@@ -38,7 +38,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = {""})
+@CrossOrigin(origins = {"https://portfolio-frontendpia.web.app"})
 public class AuthController {
 
     @Autowired
