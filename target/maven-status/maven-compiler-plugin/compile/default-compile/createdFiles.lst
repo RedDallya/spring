@@ -20,6 +20,7 @@ com\portfoliocv\spring\repository\IPersonaRepository.class
 com\portfoliocv\spring\Security\Dto\NuevoUsuario.class
 com\portfoliocv\spring\Entity\Proyecto.class
 com\portfoliocv\spring\Security\Service\UserDetailsImpl.class
+com\portfoliocv\spring\Security\Controller\AuthController$SecurityConfig.class
 com\portfoliocv\spring\Security\Service\UsuarioService.class
 com\portfoliocv\spring\service\SProyectos.class
 com\portfoliocv\spring\Dto\dtoProyectos.class

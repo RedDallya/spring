@@ -27,7 +27,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ *
+ * @author Hp
+ */
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = {""})
@@ -93,5 +101,16 @@ public class AuthController {
         return new ResponseEntity(jwtDto, HttpStatus.OK);
     }
 
+
+@Configuration
+public class SecurityConfig {
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    // Other configuration methods...
+}
 }
         
